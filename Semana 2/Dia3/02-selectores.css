@@ -1,0 +1,24 @@
+h1{
+    font-family: Arial;
+}
+
+section{
+    background: aqua;
+}
+
+/* Selectores */
+/* Esto es una clase, funciona para varios elementos .nombre_clase*/
+.resaltar{
+    background: orangered;
+    color: whitesmoke;
+}
+
+.textonaranja{
+    color: orange;
+}
+/* Para hacer referencia a un id, tengo que anteponer el # al nombre del id 
+ */
+
+#importante{
+    border: 3px dotted red;
+}

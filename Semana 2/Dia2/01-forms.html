@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Registro de Usuarios</h2>
+            <form>
+                <label for="nombres">Nombres</label>
+                <input 
+                type="text"
+                placeholder="Ingresa tus nombres completos"
+                id="nombres"
+                value=""
+                pattern="[A-Z a-z]+"
+                >
+                <br>
+                <label for="apellidos">Apellidos</label>
+                <input 
+                    type="text"
+                    placeholder="Ingrese apellidos"
+                    id="apellidos"
+                    pattern="[A-Z a-z]{4,30}"
+                >
+                <br>
+                <label>Correo:</label>
+                <input 
+                    type="email"
+                    placeholder="ingresa un email válido"
+                >
+                <br>
+                <label>Contraseña</label>
+                <input 
+                    type="password"
+                    placehokder="Ingrese una contraseña"
+                    required
+                >
+                <br>
+                <label>Edad</label>
+                <input 
+                    type="number"
+                    placeholder="Ingresa edad"
+                    min="1"
+                    max="100"
+                >
+                <br>
+                
+                <h4>Datos adicionales</h4>
+                
+                <label>Fecha de nacimiento</label>
+                
+                <input
+                    type="date"
+                >
+                
+                <br>
+                
+                <label>Teléfono</label>
+                
+                <input 
+                    type="tel"
+                    placeholder="Ingrese su teléfono"
+                >
+                <br>
+                <label>Género</label>
+                <br>
+                <input 
+                type="radio"
+                name="genero"
+                value="M">Masculino 
+                <br>
+                <input 
+                type="radio"
+                name="genero"
+                value="F">Femenino
+                <br>
+                <input 
+                type="radio"
+                name="genero"
+                value="ND">Prefiero no divulgarlo
+                <br>
+                <select>
+                    <option disabled selected>
+                        Seleccionar...
+                    </option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AN">Ancash</option>
+                    <option value="AP">Apurimac</option>
+                    <option value="LI">Lima</option>
+                    <option value="jm">-Jesús Maria</option>
+                    <option value="jm">-San Miguel</option>
+                </select>
+                <br>
+                <label>Hobbies</label>
+                <br>
+                <label>Leer</label>
+                <input type="checkbox" value="leer">
+                <br>
+                <label>Jugar fútbol</label>
+                <input type="checkbox" value="fútbol">
+                <br>
+                <label>
+                    Tocar guitarra
+                </label>
+                <input type="checkbox" value="guitarra">
+                <br>
+                <label>Escuchar música</label>
+                <input type="checkbox" value="música">
+                <br>
+                <textarea placeholder="Describete">
+                    
+                </textarea>
+                <br>
+                <label>Sube tu foto</label>
+                <input type="file">
+                <hr>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="limpiar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
