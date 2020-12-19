@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: 1px solid red;
+    }
+
+    body{
+      background-color: #3B4F7B;
+    }
+
+    .contenedor{
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo{
+      font-family: 'Cabin Sketch', cursive;
+      /* font-weight: 700; */
+      font-size: 30px;
+    }
+
+    ul{
+      display: flex;
+      width: 500px;
+      justify-content: space-around;
+    }
+
+    ul>li:nth-child(5){
+      border: 2px solid #64A8D7;
+      border-radius: 15px;
+    }
+
+    li{
+      /* viñetas */
+      list-style-type: none;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 10px;
+    }
+    
+    li:hover{
+      color: #64A8D7;
+    }
+
+    nav{
+      display: flex;
+      justify-content:space-between;
+      padding: 20px 0;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <nav>
+      <div class="logo">
+        ARSHA
+      </div>
+      <div class="menu">
+        <ul>
+          <li>Link1</li>
+          <li>Link2</li>
+          <li>Link3</li>
+          <li>Link4</li>
+          <li>Link5</li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</body>
+</html>
