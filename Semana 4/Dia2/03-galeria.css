@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor{
+    border: 2px solid lightseagreen;
+    min-width: 700px;
+    min-width: 1000px;
+    min-height: 900px;
+    margin: 0 auto;
+    /* grid */
+    display: grid;
+    /*  */
+    /* minmax(tamañominimo,tamañomaximo) */
+    grid-template-columns: repeat(4,minmax(150px,1fr));
+}
+
+.caja{
+    border: 2px solid skyblue;
+}
