@@ -18,6 +18,9 @@ header{
 .cards{
     padding: 20px 50px 50px 50px;
     text-align: center;
+    /* flex */
+    display: flex;
+    justify-content: space-between;
 }
 
 .card{
