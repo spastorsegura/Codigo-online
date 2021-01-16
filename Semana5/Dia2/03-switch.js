@@ -1,4 +1,4 @@
-var mes = +prompt("Ingrese el més en números")
+var mes = +prompt("Ingrese el mes en números")
 
 switch(mes){
   //si mes vale 1
