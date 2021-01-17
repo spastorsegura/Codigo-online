@@ -1,6 +1,6 @@
 var contador = 1;
 
-//mientras contador sea meno o igual que 10, ejecuta el codigo dentro de while
+//mientras contador sea menor o igual que 10, ejecuta el codigo dentro de while
 while(contador <= 10){
   console.log("El contador es igual a: " + contador);
   contador = contador + 2;
