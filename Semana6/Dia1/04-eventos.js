@@ -46,7 +46,8 @@ inputtexto.addEventListener("keyup",function(e){
         console.log(e)
         var nuevoParrafo = document.createElement("p");
         nuevoParrafo.innerHTML=inputtexto.value;
-        divLista.appendChild(nuevoParrafo);
+        divLista.appendChild(nuevoParrafo)
+        inputtexto.value="";
     }
     
 })
