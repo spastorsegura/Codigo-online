@@ -144,7 +144,11 @@ btnGuardar.addEventListener("click",function(){
   let fecha=inputFecha.value
   //Conversión fecha a segundos, para eso utilizamos getTime
   //getTime()nos da la fecha en milisegundos así que lo dividimos en 1000
-  let fecConvertida=new Date(fecha).getTime()/1000;
+  let fechaConvertida=new Date(fecha).getTime()/1000;
+
+  //YA EL FINAL
+  //Voy a llamar a mi función enviarBoleta(nombre,dni,fecha,carrito,total) con todo lo que necesito pasarle
+  enviarBoleta(nombre,dni,fechaConvertida,carrito,totalBoleta);
 
 
 })
