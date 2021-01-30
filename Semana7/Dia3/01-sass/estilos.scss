@@ -1,0 +1,36 @@
+@import "./components/globals"
+.texto{
+    color:$colorprimario;
+    font-family: $fuenteprimaria;
+    font-size: $tamaniogeneral;
+}
+
+.btn{
+    background: $colorprimario;
+    font-size: $tamaniogeneral*0.75;
+}
+
+//anidación
+//BEM BLOCK ELEMENT MODIFIER
+
+.perfil{
+    &__imagen{ //elemento
+        border-radius: 25px;
+        &:hover{//modifier-modificador
+            box-shadow: 4px 4px 4px black;
+        }
+    }
+}
+
+//mixins
+//@mixin nombre_mixin
+
+@mixin cuadrado($tamanio){
+    width: $tamanio;
+    height: $tamanio;
+}
+
+.cuadrado{
+    @include cuadrado(200px);
+    border: 2px solid orangered;
+}
