@@ -1,0 +1,16 @@
+{
+  "name": "proyectonode",
+  "version": "1.0.0",
+  "description": "proyectito con node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Prueba",
+    "Codigo"
+  ],
+  "author": "Sergio Pastor",
+  "license": "ISC"
+}
