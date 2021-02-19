@@ -8,7 +8,7 @@ export default function DetalleView(props) {
 const [miProducto,setMiProducto]=useState({})
 
 const getProduct=async()=>{
-    let productoObtenido = await obtenerProductoPorId
+    let productoObtenido = await obtenerProductoPorId(productoID)
     setMiProducto(productoObtenido)
 }
 
@@ -23,6 +23,7 @@ useEffect(()=>{
                     <img
                         src={miProducto.imagen}
                         alt={miProducto.nombre}
+                        className="img-fluid"
                     />
                 </div>
                 <div className="col-md-12 col-xl-6">
