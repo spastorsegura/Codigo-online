@@ -17,6 +17,8 @@ useEffect(()=>{
 },[])
 
     return (
-        
+        <Fragment>
+            <h1>{miProducto.nombre}</h1>
+        </Fragment>
     )
 }
