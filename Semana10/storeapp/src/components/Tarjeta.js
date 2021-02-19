@@ -9,7 +9,7 @@ export default function Tarjeta({producto}) {
         <div className="card-body d-grid justify-content-center">
           <h5 className="card-title">{producto.nombre}</h5>
           <p className="font-weight-bold">Precio: S/ {producto.precio}</p>
-          <Link className="btn btn-primary btn-sm" to={`/detalle/${producto.id}`}> Ver detalles</Link>
+          <Link className="btn btn-primary btn-sm" to={`/detalle/${producto._id}`}> Ver detalles</Link>
         </div>
       </div>
     </div>
