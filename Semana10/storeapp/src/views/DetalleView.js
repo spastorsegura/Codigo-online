@@ -1,6 +1,7 @@
 import React from 'react'
 
-export default function DetalleView() {
+export default function DetalleView(props) {
+    console.log(props)
     return (
         <div>
             Hola yo soy la vista detalle
