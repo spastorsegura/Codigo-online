@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // const URL = "https://601e0117be5f340017a1a114.mockapi.io/productos";
-const URL = "https://backfloresv1.herokuapp.com/api/v1/";
+const URL = "https://backfloresv1.herokuapp.com/api/v1/productos";
 
 const obtenerProductos = async () => {
   try {
