@@ -18,10 +18,11 @@ const obtenerProductoPorId=async(prod_id)=>{
   try {
     let{data}=await axios.get(`${URL}/${prod_id}`)
   } catch (error) {
-    
+    return(error)
   }
 }
 //exporto mis funciones en forma de un objeto
 export{
-  obtenerProductos
+  obtenerProductos,
+  obtenerProductoPorId
 }
