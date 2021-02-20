@@ -19,7 +19,7 @@ export default function FormCategoria() {
 
   return (
     <div>
-      <form onSubmit={(ev)=>{}}>
+      <form onSubmit={(ev)=>{manejarSubmit(ev)}}>
         <div className="mb-2">
           <label className="form-label">Nombre de la categoría</label>
           <input 

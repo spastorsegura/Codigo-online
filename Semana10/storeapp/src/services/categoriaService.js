@@ -15,7 +15,7 @@ const obtenerCategorias = async () => {
 const crearCategoria = async (objCategoria) => {
     try {
         let headers={
-            "content-type":"application/json"
+            "Content-Type":"application/json"
         }
         let{data} = await axios.post(URL,objCategoria,{headers})
         return data.content
