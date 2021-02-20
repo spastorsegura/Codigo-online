@@ -1,11 +1,25 @@
 import React, {useState} from "react";
+import {crearCategoria} from '../services/categoriaService'
 
 export default function FormCategoria() {
     const [nombreCategoria,setNombreCategoria]=useState("")
 
+    const manejarSubmit = async (ev)=>{
+        //prevenimos que se ejecute el evento por defecto submit
+        ev.preventDefault()
+
+        //crea objeto como pide el backend
+        let objCategoria = {
+            nombre:nombreCategoria
+        }
+        //hago petición
+        let response = await crearCategoria(objCategoria)
+        console.log(response)
+    }
+
   return (
     <div>
-      <form>
+      <form onSubmit={(ev)=>{}}>
         <div className="mb-2">
           <label className="form-label">Nombre de la categoría</label>
           <input 
@@ -17,8 +31,9 @@ export default function FormCategoria() {
           <small className="form-text">
               Ej.:Ofertas o regalos
           </small>
-          <button type="submit" className="btn btn-primary">Crear categoría</button>
+          
         </div>
+        <button type="submit" className="btn btn-primary">Crear categoría</button>
         
       </form>
     </div>
