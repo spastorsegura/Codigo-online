@@ -9,7 +9,7 @@ export default function FormCategoria() {
         <div className="mb-2">
           <label className="form-label">Nombre de la categoría</label>
           <input 
-          lassName="form-control" 
+          className="form-control" 
           type="text"
           value={nombreCategoria}
           onChange={(e)=>{setNombreCategoria(e.target.value)}}
